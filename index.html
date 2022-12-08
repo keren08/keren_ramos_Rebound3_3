@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
     <title>ONEMIND</title>
   </head>
   <body>
     <header>
       <nav>
         <div>
-          <h2><i></i></h2>
+          <h2><i class="fa fa-user" aria-hidden="true"></i>ONEMIND</h2>
         </div>
         <div>
-          <i></i>
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
       </nav>
     </header>
@@ -24,15 +29,25 @@
       </section>
       <section>
         <div>
-          <img src="" alt="" />
-          <input type="text" name="mensaje" id="mensaje" />
-          <div>
-            <p>Me siento</p>
-            <a href=""><img src="assets/img/feliz.png" alt="" /></a>
-            <a href=""><img src="assets/img/tranquila.png" alt="" /></a>
-            <a href=""><img src="assets/img/triste.png" alt="" /></a>
-            <a href=""><img src="assets/img/enojada.png" alt="" /></a>
-          </div>
+          <h1 class="comillas">“</h1>
+          <form action="">
+            <input type="text" name="mensaje" id="mensaje" />
+            <div>
+              <p>Me siento</p>
+              <button type="submit" id="feliz">
+                <img src="assets/img/feliz.png" alt="" />
+              </button>
+              <button type="submit" id="tranquila">
+                <img src="assets/img/tranquila.png" alt="" />
+              </button>
+              <button type="submit" id="triste">
+                <img src="assets/img/triste.png" alt="" />
+              </button>
+              <button type="submit" id="enojada">
+                <img src="assets/img/enojada.png" alt="" />
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
