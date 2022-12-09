@@ -1,0 +1,166 @@
+:root{
+    --fondo-body:rgb(240,247,244);
+    --fondo-bodt-degra:linear-gradient(180deg, rgba(240,247,244,1) 2%, rgba(205,230,219,1) 50%, rgba(177,217,200,1) 100%, rgba(154,208,185,1) 100%);
+    --card-back:#6BC2BD;
+    --color-comillas: white;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    height: 100%;
+    min-height: 100vh;
+}
+
+.body--backgroud{
+    background: var(--fondo-body);
+    background: var(--fondo-bodt-degra)
+}
+
+.comillas-color{
+    color: var(--color-comillas);
+}
+
+.card--background{
+    background-color: var(--card-back);
+}
+
+.feliz{
+    background-color: #F3E600;
+}
+
+.tranquilo{
+    background-color: #6BC2BD;
+}
+
+.triste{
+    background-color:#27295A ;
+}
+
+.enojado{
+    background-color: #EE7579;
+}
+
+#mensajes{
+    width: 50%;
+    .mensajes__contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+
+}
+
+
+
+.header{
+    background-color: aliceblue;
+    right: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+
+    &__list{
+        border-radius: 10px;
+        border: 1px solid gray;
+        padding: 1%;
+    }
+}
+
+.main{
+    width: 100%;
+    
+    &__titulo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+        padding: 2% 0;
+        &__text{
+        font-weight: 900;
+        font-size: 200%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    }
+}
+
+.contenedor{
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-comillas);
+    &__card{
+        padding: 0% 10%;
+        border-radius: 20px;
+        width: 50%;
+        &__comillas{
+            font-size: 10rem;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.form{
+    margin-top: -80px;
+
+    &__contenedor{
+        display: flex;
+        align-items: center;
+      
+    }
+
+    &__mesiento{
+        font-weight: 900;
+    }
+
+    &__input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #6bc2be01;
+        border: 2px solid var(--color-comillas);
+        margin: 8% 0;
+        color: var(--color-comillas);
+        font-size: 2rem;
+        padding-left: 2%;
+    }
+
+    &__input:focus{
+        border: 2px solid #0f7c77;
+        outline: none;
+
+    }
+
+    &__input::placeholder{
+        padding: 2%;
+        color: var(--color-comillas);
+    }
+
+    &__boton{
+        background-color: #6bc2be00;
+        border: none;
+        width: 20px;
+        margin: 1%;
+        display: flex;
+        
+        &__img{
+            width: 100%;
+        }
+    }
+}
